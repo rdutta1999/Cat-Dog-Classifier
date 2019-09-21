@@ -38,4 +38,4 @@ We use **InceptionV3** as the base model with the **'imagenet' weights**. We rem
 
 Now, we **unfreeze** the Convolutional part of the model and re-train the entire model for **30 epochs**. We use **Adam** as the optimizer with a very **small learning rate(1e-5)**, and use Checkpoints to save the model when it has the highest Validation accuracy.
 
-We see that after the last epoch, the model has the best combination of Training and Validation accuracy, so we save it as the final model and use it to predict the Test cases, which got a score(LogLoss) of **0.14932** when submitted to Kaggle. 
+We see that after the last epoch, the model has the best combination of Training and Validation accuracy, so we save it as the final model and use it to predict the Test cases, which got us a score(LogLoss) of **0.14932** when submitted to Kaggle. 
