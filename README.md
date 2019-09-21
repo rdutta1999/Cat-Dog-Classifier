@@ -32,7 +32,7 @@
      
 </pre>
 
-We have used **Keras Image Data Generators** for performing **Data Augmentation**.
+We have used **Keras ImageDataGenerator** for performing **Data Augmentation**.
 
 We use **InceptionV3** as the base model with the **'imagenet' weights**. We remove the **Fully connected Layers** at the top, and then add a **Global Average Pooling Layer** and a **Dense Laye**r with **sigmoid activation** function. We **freeze** the entire Convolutional part of the Network and only train the last Dense layer for **20 epochs**. After that, we save the model and move on to **finetuning** the model.
 
